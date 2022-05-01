@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link href="styles.css" rel="stylesheet" />
+    <title>The game</title>
+  </head>
+  <body>
+    <div id="nav"></div>
+
+    <form class="row g-3" style="margin: 15px">
+      <div class="col-6">
+        <label for="inputName" class="form-label">Vorname</label>
+        <input type="text" class="form-control" id="inputName2" required />
+      </div>
+      <div class="col-6">
+        <label for="inputSurname" class="form-label">Nachname</label>
+        <input type="text" class="form-control" id="inputSurname2" required />
+      </div>
+      <div class="col-12">
+        <label for="inputEmail4" class="form-label">Email</label>
+        <input type="email" class="form-control" id="inputEmail2" />
+      </div>
+      <div class="col-12">
+        <label for="inputPhone" class="form-label">Telefon/Mobil</label>
+        <input type="number" class="form-control" id="inputPhone2" required />
+      </div>
+      <div class="col-12">
+        <label for="Maehtermin" class="form-label">Mähtermin</label>
+        <input type="date" class="form-control" id="inputMaehtermin" />
+      </div>
+      <div class="col-12">
+        <label for="Infos" class="form-label">Ort des Feldes und Infos</label>
+        <input
+          type="text"
+          class="form-control"
+          id="inputInfos2"
+          placeholder="PLZ, Ortsbschreibung und Feldgrösse"
+        />
+      </div>
+      <div class="col-12">
+        <label for="Koordinaten" class="form-label"
+          >Koordinaten der Feldmitte</label
+        >
+        <input type="text" class="form-control" id="inputKoordinaten" />
+      </div>
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck" />
+          <label class="form-check-label" for="gridCheck">
+            Ich erscheine zur vereinbarten Uhrzeit/Datum, um Ihnen das Feld zu
+            zeigen:
+          </label>
+        </div>
+      </div>
+      <div class="col-12">
+        <label for="TreffenDatum" class="form-label">Termin Treffpunkt</label>
+        <input type="date" class="form-control" id="inputTreffenDatum" />
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary">Absenden</button>
+      </div>
+    </form>
+    <script>
+      $("#nav").load("/navPartial.html");
+    </script>
+  </body>
+</html>
